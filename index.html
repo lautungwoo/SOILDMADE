@@ -3,43 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>专业配土专家 - 让你的植物自由呼吸</title>
+    <title>SOILMADE | 专业定制配土</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
-        header { background: #4CAF50; color: white; padding: 2rem; text-align: center; }
-        .container { padding: 20px; max-width: 800px; margin: auto; }
-        .product-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        .btn { background: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
-        .price { color: #e91e63; font-weight: bold; font-size: 1.2rem; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans SC', sans-serif; background-color: #f8f9fa; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1585336139118-b31b7420d5b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🌿 专业定制配土</h1>
-        <p>每一份土，都是对植物的深情告白</p>
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-leaf text-green-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-800 tracking-wider">SOILMADE</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#products" class="hover:text-green-600 transition">皇牌配方</a>
+                <a href="#order" class="hover:text-green-600 transition">立即下单</a>
+                <a href="#" class="hover:text-green-600 transition">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gradient h-[500px] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">专业定制配土</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">每一份土，都是对植物的深情告白</p>
+            <a href="#order" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition transform hover:scale-105 inline-block">立即定制</a>
+        </div>
     </header>
-    <div class="container">
-        <h2>我们的皇牌配方</h2>
-        <div class="product-card">
-            <h3>1. 多肉专用颗粒土</h3>
-            <p>高透气、防烂根，含黄金比例软麦饭石与赤玉土。</p>
-            <p class="price">RM 15.00 / 5L</p>
-            <a href="https://t.me/你的机器人ID" class="btn">Telegram 自动下单</a>
-        </div>
 
-        <div class="product-card">
-            <h3>2. 观叶植物营养土</h3>
-            <p>富含进口泥炭与珍珠岩，长效肥力。</p>
-            <p class="price">RM 12.00 / 5L</p>
-            <a href="https://wa.me/你的电话号码" class="btn" style="background:#25D366;">WhatsApp 咨询</a>
+    <section id="products" class="py-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 italic">—— 皇牌产品 ——</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:shadow-xl">
+                <img src="https://images.unsplash.com/photo-1599591037488-dc78416ca04f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">多肉专用颗粒土</h3>
+                    <p class="text-gray-600 mb-4">高透气、防烂根，含黄金比例软麦饭石与赤玉土。</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-green-600">RM 15.00 <span class="text-sm text-gray-400">/ 5L</span></span>
+                        <a href="https://wa.me/你的号码" class="text-green-600 border border-green-600 px-4 py-2 rounded-lg hover:bg-green-50 transition">WhatsApp 咨询</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:shadow-xl">
+                <img src="https://images.unsplash.com/photo-1592150621344-220b29ce9239?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">观叶植物营养土</h3>
+                    <p class="text-gray-600 mb-4">富含进口泥peat与珍珠岩，长效肥力，不板结。</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-green-600">RM 12.00 <span class="text-sm text-gray-400">/ 5L</span></span>
+                        <a href="https://t.me/你的机器人" class="text-blue-500 border border-blue-500 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Telegram 订购</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h3>为什么选择我们？</h3>
-        <ul>
-            <li>**自家配方：** 经过千盆植物实测。</li>
-            <li>**即订即配：** 保证土质新鲜，不结块。</li>
-            <li>**AI 售后：** 24小时为你解答换土难题。</li>
-        </ul>
-    </div>
+    <section id="order" class="py-16 bg-green-50 px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+            <div class="text-center mb-10">
+                <i class="fa-solid fa-clipboard-list text-4xl text-green-600 mb-4"></i>
+                <h2 class="text-3xl font-bold text-gray-800">在线定制 · 极速发货</h2>
+                <p class="text-gray-500 mt-2">填写以下信息，AI 助手将立即为您处理订单</p>
+            </div>
+            <form id="orderForm" class="space-y-6">
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">您想定制哪款土？</label>
+                    <select class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none">
+                        <option>多肉专用颗粒土</option>
+                        <option>观叶植物营养土</option>
+                        <option>自定义配方 (请在备注说明)</option>
+                    </select>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">需要多少公升 (L)？</label>
+                        <input type="number" placeholder="例如: 5" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">您的 WhatsApp/电话</label>
+                        <input type="tel" placeholder="方便我们联系您" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">备注 (特殊要求)</label>
+                    <textarea rows="3" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none" placeholder="告诉我您的植物品种..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1">
+                    一键下提交订单
+                </button>
+            </form>
+            <p class="text-center text-xs text-gray-400 mt-6">由 n8n AI 自动化引擎提供驱动</p>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-500 border-t">
+        <div class="flex justify-center space-x-6 mb-4 text-xl">
+            <a href="#"><i class="fa-brands fa-facebook hover:text-blue-600"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram hover:text-pink-600"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp hover:text-green-500"></i></a>
+        </div>
+        <p>© 2026 SOILMADE. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
